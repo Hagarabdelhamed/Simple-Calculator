@@ -1,0 +1,81 @@
+    .calculator {
+        height: 300px;
+        width: 270px;
+        /* margin: 150px; */
+        /* padding: 100px; */
+        backdrop-filter: blur(200px);
+        /* background-color: transparent; */
+        border: 1px solid #68cfb7f4;
+        border-radius: 5px;
+        box-shadow: inset 1px 1px 7px 0px #000000, 0px 0px 4px 2px rgba(0, 0, 0, 0.861), 0px 0px 4px 2px rgba(0, 0, 0, 0.861);
+        position: fixed;
+        top: 50%;
+        transform: translate(0, -50%);
+        padding: 100px;
+    }
+    
+    input {
+        color: rgba(0, 0, 0, 0.861);
+        font-style: bold;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    #display {
+        height: 10%;
+        width: 100%;
+        margin-bottom: 40px;
+        padding: 5px;
+        font-size: 40px;
+        background: rgba(255, 255, 255, 0.498);
+        box-shadow: inset 1px 1px 7px 0px #000000, 0px 0px 4px 2px rgba(0, 0, 0, 0.861), 0px 0px 4px 2px rgba(0, 0, 0, 0.247);
+    }
+    
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 5px;
+    }
+    
+    button {
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+        background-color: #F4C92F;
+        border-color: white;
+        border: 1px solidinset 1px 1px 7px 0px #025d4a9d, 0px 0px 4px 2px #ffffff, 0px 0px 4px 2px #105142f4;
+        border-radius: 30px;
+        cursor: pointer;
+        margin: 10px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    button:hover {
+        background-color: #4da9948b;
+    }
+    
+    button.number {
+        font-style: italic;
+        color: rgba(0, 0, 0, 0.861);
+    }
+    
+    button.operator {
+        font-style: italic;
+        color: rgba(0, 0, 0, 0.861);
+    }
+    
+    button.clear {
+        font-style: italic;
+        color: #ff0000;
+    }
+    
+    body {
+        background-image: url(Home.png);
+        position: fixed;
+    }
+    
+    h1 {
+        position: fixed;
+        font-family: 'AmstelvarAlpha';
+        font-style: oblique;
+        margin-left: 7%;
+    }
